@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: monospace;
-    background-color: #91C4C8;
+    background-color: #282828;
     min-height: 100%;
     box-sizing: border-box;
     margin: 0;
@@ -32,7 +32,9 @@ body {
 }
 
 img {
-    width: 100%;
+    width: min-content;
+    margin: 10px 0px 10px 0px;
+    max-height: 205px;
 }
 
 .image {
@@ -68,4 +70,31 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: normal;
+}
+
+hr {
+    border-color: #557987;
+    background-color: hsl(197, 23%, 43%);
+    color: #557987;
+    border: 1px solid #557987;
+    margin: 10px 10px 10px 10px;
+    align-self: stretch;
+}
+
+#flexgrandfather {
+    display: flex;
+    justify-content: center;
+}
+
+#centerparent {
+    min-width: 36vw;
+    max-width: 600px;
+    background-color: #91C4C8;
+    border-radius: 1vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    padding: 10px;
 }
